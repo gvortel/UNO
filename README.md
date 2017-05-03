@@ -1,9 +1,8 @@
 # UNO
-UNO Game Simulation in JAVA
+# UNO Game Simulation in JAVA
 
-
--------------------Model
--UnoGame
+- Model
+- UnoGame
   Consulted first the number of players.
   
   initialization:
@@ -26,7 +25,7 @@ UNO Game Simulation in JAVA
   When the table with the cards a player adiasei-ending the game and follow
   calculated winner's points.
 
--Player
+- Player
   We create for each player a Player object that is stored in a table
   type Player.
   Each Player has a table with cards of who initializes the
@@ -37,13 +36,13 @@ UNO Game Simulation in JAVA
   Points of cards
   b) The method ArraySort to place the cards of the players during the first places of the table.
 
--Card
+- Card
   Abstract superclass Card has six subclasses are represented different
   paper type. In each subclass Amend appropriate method for each one.
   Each subclass contains the match method which checks if the card within a type
   fits with the card in DiscardPile.
   
--Pile
+- Pile
   The pile is abstract classes and two subclasses:
   draw pile (the stack of unused papers)
   discard pile (the stack with cards dropping).
@@ -52,15 +51,3 @@ UNO Game Simulation in JAVA
   In subclasses Discard pile situated a method of adding layers of observers
   in a list. Furthermore it has a routine to keep all observers after
   Any change of the stack.
-
--------------------View
-Pile listener
-When clicking on a card, the click is detected by the listener. The listener
-adds the card in the stack of DiscardPile.
-DiscardPileRenderer
-The observer (DiscardPileRenderer) exists in the view package and implements the interface
-the listener. In the fraction containing all the energy they need to renew
-graphics.
-When discardpile accept a new card informs listeners that has the list
-(Stakeholders) calling the method pileStatusChanged to make
-graphics change in the stack.
